@@ -5,9 +5,12 @@ import { and, eq } from 'drizzle-orm'
 import React, { useEffect, useState } from 'react'
 import ChapterListCard from './_components/ChapterListCard'
 import ChapterContent from './_components/ChapterContent'
+import { useParams } from 'next/navigation'
 
-function CourseStart({params}) {
-
+function CourseStart() {
+    
+    const params=useParams();
+    console.log(params)
     const [course,setCourse]=useState();
     const [selectedChapter,setSelectedChapter]=useState(0);
     const [chapterContent,setChapterContent]=useState();
@@ -17,7 +20,7 @@ function CourseStart({params}) {
 
     // useEffect(()=>{
        
-    //     GetSelectedChapterContent(0)
+      //  GetSelectedChapterContent(0)
     // },[course])
 
     /**

@@ -10,6 +10,7 @@ const opts = {
   };
 function ChapterContent({chapter,content}) {
     console.log(chapter)
+    console.log(content)
     
   return (
     <div className='p-10'>

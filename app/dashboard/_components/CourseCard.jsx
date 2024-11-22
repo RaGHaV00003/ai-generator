@@ -28,7 +28,7 @@ function CourseCard({course,refreshData,displayUser=false}) {
         <Link href={'/course/'+course?.courseId}>
             <Image src={course?.courseBanner} width={300} height={200}
             className='w-full h-[200px] object-cover rounded-lg'
-            />
+           alt="logo" />
         </Link>
         <div className='p-2'>
             <h2 className='font-medium text-lg flex justify-between items-center'>{course?.courseOutput?.course?.name}
@@ -47,7 +47,7 @@ function CourseCard({course,refreshData,displayUser=false}) {
             
             </div>
           {displayUser&&  <div className='flex gap-2 items-center mt-2'>
-                <Image src={course?.userProfileImage} width={35} height={35}
+                <Image alt="logo"src={course?.userProfileImage} width={35} height={35}
                 className='rounded-full'
                 />
                 <h2 className='text-sm'>{course?.userName}</h2>

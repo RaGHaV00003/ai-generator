@@ -20,7 +20,7 @@ function LoadingDialog({loading}) {
     <AlertDialogHeader>
       <AlertDialogDescription>
         <div className='flex flex-col items-center py-10'>
-            <Image src={'/loader.gif'} width={100} height={100} />
+            <Image alt="logo"src={'/loader.gif'} width={100} height={100} />
             <h2>Please wait... Ai Working on your course</h2>
         </div>
       </AlertDialogDescription>
